@@ -1,0 +1,65 @@
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
+    defaultConfig {
+        applicationId 'com.abc.qrscannerpro'
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 4
+        versionName "1.3"
+        multiDexEnabled true
+        ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86','x86_64'
+
+        manifestPlaceholders = [
+
+                onesignal_app_id: 'Your One Signal ID', // Your OneSignal App ID
+
+                onesignal_google_project_number: 'REMOTE'
+        ]
+
+
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.exifinterface:exifinterface:1.1.0'
+    implementation 'androidx.browser:browser:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.j256.ormlite:ormlite-android:4.48'
+    implementation 'com.kyleduo.switchbutton:library:1.4.6'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.okhttp3:okhttp:4.1.0'
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'com.github.clans:fab:1.6.4'
+    implementation 'com.google.zxing:core:3.3.3'
+    implementation 'com.nononsenseapps:filepicker:4.1.0'
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+    implementation 'com.google.android.gms:play-services-ads:18.3.0'
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation 'com.onesignal:OneSignal:3.11.4'
+}

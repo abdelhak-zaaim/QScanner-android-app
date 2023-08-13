@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <androidx.coordinatorlayout.widget.CoordinatorLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fitsSystemWindows="true"
+      tools:context="com.abc.qrscannerpro.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+      <androidx.appcompat.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          android:background="@color/color_main_toolbar_bg"
+          app:popupTheme="@style/AppTheme.PopupOverlay"
+          android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+          app:elevation="0dp"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+      <com.abc.qrscannerpro.views.ZXingScannerView
+          android:layout_gravity="center"
+          android:id="@+id/zxing_scanner_view"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="4"/>
+    </LinearLayout>
+
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

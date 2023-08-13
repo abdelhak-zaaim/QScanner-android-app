@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="settings_margin">16dp</dimen>
+    <dimen name="settings_margin_triple">24dp</dimen>
+    <dimen name="settings_divider_icon_size">24dp</dimen>
+
+    <dimen name="settings_text_size">16sp</dimen>
+    <dimen name="settings_desc_text_size">14sp</dimen>
+    <dimen name="list_item_call_photo_size">40dp</dimen>
+
+    <dimen name="list_item_call_name_size">18sp</dimen>
+    <dimen name="list_item_call_desc_size">14sp</dimen>
+    <dimen name="list_item_call_time_size">13sp</dimen>
+
+    <dimen name="call_list_margin">10dp</dimen>
+
+    <dimen name="qr_from_file_img_size">100dp</dimen>
+    <dimen name="qr_generated_img_size">350dp</dimen>
+
+
+    <dimen name="dots_height">30dp</dimen>
+
+    <dimen name="dots_margin_bottom">20dp</dimen>
+
+
+    <dimen name="img_width_height">180dp</dimen>
+    <dimen name="slide_title">25dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="margin_left">10dp</dimen>
+    <dimen name="margin_right">10dp</dimen>
+
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/splashh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="149dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/splashImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/splashTextt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/color_main_divider_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/splashTexttt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="@string/app_description"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#d3d1d1" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.Material.ProgressBar.Horizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splashh"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:indeterminate="true"
+        android:indeterminateTint="#fff"
+        tools:targetApi="lollipop" />
+
+
+    <LinearLayout
+        android:id="@+id/splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/splashText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="@string/footer"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

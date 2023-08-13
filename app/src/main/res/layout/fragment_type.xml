@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical"
+    android:background="@color/color_window_color">
+
+    <ScrollView
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/settings_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/code_type_text_layout"
+                android:layout_marginTop="@dimen/settings_margin"
+                android:layout_marginBottom="@dimen/settings_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginRight="12dp"
+                    >
+                    <ImageView
+                        android:id="@+id/code_type_text_ic"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_width="@dimen/settings_divider_icon_size"
+                        android:layout_height="@dimen/settings_divider_icon_size"
+                        android:src="@drawable/code_type_text_ic"
+                        />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textSize="@dimen/settings_text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/code_type_text"
+                        android:textColor="@color/color_edit_record_text"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/settings_margin"
+                    android:gravity="right">
+                    <ImageView
+                        android:id="@+id/code_type_text_cb_ic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/settings_check_ic"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/settings_divider_icon_size"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"/>
+                <include layout="@layout/item_line" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/code_type_barcode_layout"
+                android:layout_marginTop="@dimen/settings_margin"
+                android:layout_marginBottom="@dimen/settings_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginRight="12dp"
+                    >
+                    <ImageView
+                        android:id="@+id/code_type_barcode_ic"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_width="@dimen/settings_divider_icon_size"
+                        android:layout_height="@dimen/settings_divider_icon_size"
+                        android:src="@drawable/code_type_barcode_ic"
+                        />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textSize="@dimen/settings_text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/code_type_barcode"
+                        android:textColor="@color/color_edit_record_text"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/settings_margin"
+                    android:gravity="right">
+                    <ImageView
+                        android:id="@+id/code_type_barcode_cb_ic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/settings_check_ic"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/settings_divider_icon_size"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"/>
+                <include layout="@layout/item_line" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/code_type_wifi_layout"
+                android:layout_marginTop="@dimen/settings_margin"
+                android:layout_marginBottom="@dimen/settings_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginRight="12dp"
+                    >
+                    <ImageView
+                        android:id="@+id/code_type_wifi_ic"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_width="@dimen/settings_divider_icon_size"
+                        android:layout_height="@dimen/settings_divider_icon_size"
+                        android:src="@drawable/code_type_wifi_ic"
+                        />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textSize="@dimen/settings_text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/code_type_wifi"
+                        android:textColor="@color/color_edit_record_text"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/settings_margin"
+                    android:gravity="right">
+                    <ImageView
+                        android:id="@+id/code_type_wifi_cb_ic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/settings_check_ic"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/settings_divider_icon_size"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"/>
+                <include layout="@layout/item_line" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/code_type_geo_layout"
+                android:layout_marginTop="@dimen/settings_margin"
+                android:layout_marginBottom="@dimen/settings_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginRight="12dp"
+                    >
+                    <ImageView
+                        android:id="@+id/code_type_geo_ic"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_width="@dimen/settings_divider_icon_size"
+                        android:layout_height="@dimen/settings_divider_icon_size"
+                        android:src="@drawable/code_type_geo_ic"
+                        />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textSize="@dimen/settings_text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/code_type_geo"
+                        android:textColor="@color/color_edit_record_text"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/settings_margin"
+                    android:gravity="right">
+                    <ImageView
+                        android:id="@+id/code_type_geo_cb_ic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/settings_check_ic"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/settings_divider_icon_size"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"/>
+                <include layout="@layout/item_line" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/code_type_web_link_layout"
+                android:layout_marginTop="@dimen/settings_margin"
+                android:layout_marginBottom="@dimen/settings_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginRight="12dp"
+                    >
+                    <ImageView
+                        android:id="@+id/code_type_web_link_ic"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_width="@dimen/settings_divider_icon_size"
+                        android:layout_height="@dimen/settings_divider_icon_size"
+                        android:src="@drawable/code_type_web_link_ic"
+                        />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textSize="@dimen/settings_text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/code_type_web_link"
+                        android:textColor="@color/color_edit_record_text"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/settings_margin"
+                    android:gravity="right">
+                    <ImageView
+                        android:id="@+id/code_type_web_link_cb_ic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/settings_check_ic"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/settings_divider_icon_size"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"/>
+                <include layout="@layout/item_line" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/code_type_contact_layout"
+                android:layout_marginTop="@dimen/settings_margin"
+                android:layout_marginBottom="@dimen/settings_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginRight="12dp"
+                    >
+                    <ImageView
+                        android:id="@+id/code_type_contact_ic"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_width="@dimen/settings_divider_icon_size"
+                        android:layout_height="@dimen/settings_divider_icon_size"
+                        android:src="@drawable/code_type_contact_ic"
+                        />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textSize="@dimen/settings_text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/code_type_contact"
+                        android:textColor="@color/color_edit_record_text"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/settings_margin"
+                    android:gravity="right">
+                    <ImageView
+                        android:id="@+id/code_type_contact_cb_ic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/settings_check_ic"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/settings_divider_icon_size"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"/>
+                <include layout="@layout/item_line" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

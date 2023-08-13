@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_list_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ksw_md_solid_checked">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Setting Up the app for your easy"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/settings_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/settings_auto_focus_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="@dimen/settings_margin"
+                android:layout_marginTop="@dimen/settings_margin"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/settings_margin"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/settings_ic_auto_focus"
+                        android:layout_width="@dimen/settings_divider_icon_size"
+                        android:layout_height="@dimen/settings_divider_icon_size"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:background="@drawable/settings_ic_auto_focus" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_auto_focus_label"
+                        android:textColor="@color/color_edit_record_text"
+                        android:textSize="@dimen/settings_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/settings_margin"
+                    android:gravity="right">
+
+                    <com.kyleduo.switchbutton.SwitchButton
+                        android:id="@+id/sb_auto_focus"
+                        style="@style/SwitchButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/settings_divider_icon_size"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/settings_margin" />
+
+                <include layout="@layout/item_line" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/settings_square_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="@dimen/settings_margin"
+                android:layout_marginTop="@dimen/settings_margin"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/settings_margin"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/settings_ic_square"
+                        android:layout_width="@dimen/settings_divider_icon_size"
+                        android:layout_height="@dimen/settings_divider_icon_size"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:background="@drawable/settings_ic_square" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_square_label"
+                        android:textColor="@color/color_edit_record_text"
+                        android:textSize="@dimen/settings_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/settings_margin"
+                    android:gravity="right">
+
+                    <com.kyleduo.switchbutton.SwitchButton
+                        android:id="@+id/sb_square"
+                        style="@style/SwitchButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/settings_divider_icon_size"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/settings_margin" />
+
+                <include layout="@layout/item_line" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/settings_auto_save_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="@dimen/settings_margin"
+                android:layout_marginTop="@dimen/settings_margin"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/settings_margin"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/settings_ic_auto_save"
+                        android:layout_width="@dimen/settings_divider_icon_size"
+                        android:layout_height="@dimen/settings_divider_icon_size"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:background="@drawable/settings_ic_auto_save" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_auto_save_label"
+                        android:textColor="@color/color_edit_record_text"
+                        android:textSize="@dimen/settings_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/settings_margin"
+                    android:gravity="right">
+
+                    <com.kyleduo.switchbutton.SwitchButton
+                        android:id="@+id/sb_auto_save"
+                        style="@style/SwitchButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/settings_divider_icon_size"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/settings_margin" />
+
+                <include layout="@layout/item_line" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/settings_qr_size_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="@dimen/settings_margin"
+                android:layout_marginTop="@dimen/settings_margin"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/settings_margin"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/settings_ic_qr_size"
+                        android:layout_width="@dimen/settings_divider_icon_size"
+                        android:layout_height="@dimen/settings_divider_icon_size"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:background="@drawable/settings_ic_qr_size" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/settings_margin"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_qr_size_label"
+                        android:textColor="@color/color_edit_record_text"
+                        android:textSize="@dimen/settings_text_size" />
+
+                    <TextView
+                        android:id="@+id/settings_qr_size_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/settings_qr_size_label"
+                        android:textColor="@color/color_list_text_desc_color"
+                        android:textSize="@dimen/settings_desc_text_size" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/settings_divider_icon_size"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/settings_margin" />
+
+                <include layout="@layout/item_line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settings_code_formats_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="@dimen/settings_margin"
+                android:layout_marginTop="@dimen/settings_margin"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/settings_margin"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/settings_ic_code_formats"
+                        android:layout_width="@dimen/settings_divider_icon_size"
+                        android:layout_height="@dimen/settings_divider_icon_size"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:background="@drawable/settings_ic_code_formats" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_code_formats_label"
+                        android:textColor="@color/color_edit_record_text"
+                        android:textSize="@dimen/settings_text_size" />
+
+                    <TextView
+                        android:id="@+id/settings_code_formats_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/settings_code_formats_desc"
+                        android:textColor="@color/color_list_text_desc_color"
+                        android:textSize="@dimen/settings_desc_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/settings_margin"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:background="@drawable/arrow_settings" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/settings_divider_icon_size"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/settings_margin" />
+
+                <include layout="@layout/item_line" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

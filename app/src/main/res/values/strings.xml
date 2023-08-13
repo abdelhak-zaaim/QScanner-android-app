@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name" translatable="false">QScanner</string>
+    <string name="app_name_label" translatable="false">QScanner - QR &amp; Barcode</string>
+
+
+    <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="interstitial_ad_unit" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="banner_ad_unit" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+
+    <integer name="viewfinder_border_width">4</integer>
+    <integer name="viewfinder_border_length">60</integer>
+
+    <string name="apply_text">Ok</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="delete_text">Delete</string>
+
+    <!-- Headers -->
+    <string name="header_edit">Edit</string>
+    <string name="header_save">Save</string>
+    <string name="header_qr_scanner">QR Scanner</string>
+    <string name="header_barcode_scanner">Barcode scanner</string>
+    <string name="header_qr_from_file">Search QR code</string>
+    <string name="header_code_list">Code list</string>
+    <string name="header_code_type">Code type</string>
+    <string name="header_code_formats_list">Formats list</string>
+    <string name="header_code_delete_list">Delete</string>
+
+    <string name="menu_item_qr_camera_label">QR camera</string>
+    <string name="menu_item_barcode_camera_label">Barcode camera</string>
+    <string name="menu_item_qr_file_label">QR from file</string>
+    <string name="menu_item_qr_generate_label">Generate QR</string>
+    <string name="menu_item_code_list_label">Code list</string>
+    <string name="menu_item_home_label">Home</string>
+    <string name="menu_item_settings_label">Settings</string>
+    <string name="settings_share">Share</string>
+    <string name="settings_rate_us">Rate us</string>
+
+    <string name="share_text">The fastest and simplest QR and barcode scanner. Try it now:</string>
+    <string name="qr_generate_edit_text_hint">Enter QR code text</string>
+    <string name="qr_generate_btn_generate_text">Generate</string>
+    <string name="qr_generate_btn_save_text">Save</string>
+
+    <string name="db_save">The code is stored in the database</string>
+
+    <string name="no_codes_title">No saved codes</string>
+
+
+    <string name="settings_auto_focus_label">Auto focus</string>
+    <string name="settings_square_label">Square frame</string>
+    <string name="settings_auto_save_label">Auto save</string>
+    <string name="settings_qr_size_label">QR Code size</string>
+    <string name="settings_code_formats_label">Code formats</string>
+    <string name="settings_code_formats_desc">Attention! The more formats are selected, the longer the recognition process takes!</string>
+    <string name="preview_code_name_label">Code name</string>
+    <string name="preview_code_type_label">Code type</string>
+    <string name="preview_code_result_label">Result</string>
+    <string name="preview_code_save">Save</string>
+
+    <string name="code_type_text">Text</string>
+    <string name="code_type_barcode">Barcode</string>
+    <string name="code_type_wifi">WiFi</string>
+    <string name="code_type_geo">Geo</string>
+    <string name="code_type_web_link">Web link</string>
+    <string name="code_type_contact">Contact</string>
+
+    <string name="dialog_save_desc_confirm">Save changes?</string>
+    <string name="dialog_delete_code_confirm">Are you sure?</string>
+    <string name="dialog_qr_size_error">Size should be from 100 to 1600</string>
+    <string name="dialog_delete_all_check">Are you sure you want to delete the selected codes?</string>
+
+    <string name="no_text">No</string>
+    <string name="yes_text">Yes</string>
+    <string name="save_dialog_file">Name file</string>
+    <string name="save_dialog_code_name">Name</string>
+    <string name="save_dialog_qr_size">Enter the size of the generated QR code (in pixels)</string>
+
+    <string name="qr_dialog_label">Result</string>
+    <string name="qr_dialog_open_browser">Open in browser</string>
+    <string name="qr_dialog_search">Search the Internet</string>
+    <string name="qr_dialog_copy_clipboard">Copy to clipboard</string>
+    <string name="qr_dialog_save">Save to database</string>
+
+    <string name="qr_from_file_error">Could not recognize the code from the file</string>
+
+    <string name="communicate">Communicate</string>
+    <string name="rateus">Rate Us</string>
+    <string name="aboutus">About Us</string>
+    <string name="shareapp">Share App</string>
+    <string name="privacypolicy">Privacy Policy</string>
+    <string name="moreapps">More Apps</string>
+    <string name="developer" translatable="false">© Pharid</string>
+    <string name="footer">Copyright © QScanner 2019. All Right Reserved</string>
+    <string name="app_description">QR &amp; Barcode Scanner</string>
+</resources>

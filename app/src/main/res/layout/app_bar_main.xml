@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.abc.qrscannerpro.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/color_main_toolbar_bg"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:elevation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:id="@+id/ads"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:addStatesFromChildren="true"
+            android:background="@color/colorPrimary">
+
+            <include
+                layout="@layout/activity_welcomestep"
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+            </include>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/adss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <!--/*banner */ -->
+
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/admob_adview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_main_toolbar_bg"
+                app:adSize="BANNER"
+                app:adUnitId="@string/banner_ad_unit" />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_list_background"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <!--<include layout="@layout/content_main" />-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

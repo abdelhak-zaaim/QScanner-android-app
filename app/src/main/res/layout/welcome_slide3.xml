@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            app:srcCompat="@drawable/ic_qrgenerate" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Detect and Scan codes"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="automatically without press any button"
+            android:textColor="#fff" />
+    </LinearLayout>
+</RelativeLayout>

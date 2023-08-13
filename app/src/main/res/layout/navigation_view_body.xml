@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigation_view_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nv_bg_theme1"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:id="@+id/navigation_view_header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        android:gravity="bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/header_text_top"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="44dp"
+                android:src="@mipmap/ic_launcher"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/header_text_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="22dp"
+                android:text="@string/app_name"
+                android:textColor="@color/nv_text_header_theme1"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/btn_apphome"
+                style="@style/NavigationView.Item.Button"
+                android:background="@drawable/btn_transparent_light">
+
+                <ImageView
+                    android:id="@+id/img_apphome"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_apphome_red" />
+
+                <TextView
+                    android:id="@+id/txt_apphome"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/menu_item_home_label"
+                    android:textColor="@color/nv_text_theme1" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn_qr_camera"
+                style="@style/NavigationView.Item.Button"
+                android:background="@drawable/btn_transparent_light">
+
+                <ImageView
+                    android:id="@+id/img_qr_camera"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_qrcode_red" />
+
+                <TextView
+                    android:id="@+id/txt_qr_camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/menu_item_qr_camera_label"
+                    android:textColor="@color/nv_text_theme1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_barcode_camera"
+                style="@style/NavigationView.Item.Button"
+                android:background="@drawable/btn_transparent_light">
+
+                <ImageView
+                    android:id="@+id/img_barcode_camera"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_barcode_red" />
+
+                <TextView
+                    android:id="@+id/txt_barcode_camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/menu_item_barcode_camera_label"
+                    android:textColor="@color/nv_text_theme1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_qr_file"
+                style="@style/NavigationView.Item.Button"
+                android:background="@drawable/btn_transparent_light">
+
+                <ImageView
+                    android:id="@+id/img_qr_file"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_qrfile_red" />
+
+                <TextView
+                    android:id="@+id/txt_qr_file"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/menu_item_qr_file_label"
+                    android:textColor="@color/nv_text_theme1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_qr_generate"
+                style="@style/NavigationView.Item.Button"
+                android:background="@drawable/btn_transparent_light">
+
+                <ImageView
+                    android:id="@+id/img_qr_generate"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_qrgenerate_red" />
+
+                <TextView
+                    android:id="@+id/txt_qr_generate"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/menu_item_qr_generate_label"
+                    android:textColor="@color/nv_text_theme1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_code_list"
+                style="@style/NavigationView.Item.Button"
+                android:background="@drawable/btn_transparent_light">
+
+                <ImageView
+                    android:id="@+id/img_code_list"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_codelist_red" />
+
+                <TextView
+                    android:id="@+id/txt_code_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/menu_item_code_list_label"
+                    android:textColor="@color/nv_text_theme1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_settings"
+                style="@style/NavigationView.Item.Button"
+                android:background="@drawable/btn_transparent_light">
+
+                <ImageView
+                    android:id="@+id/img_settings"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_setting_red" />
+
+                <TextView
+                    android:id="@+id/txt_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/menu_item_settings_label"
+                    android:textColor="@color/nv_text_theme1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/btn_rate_us"
+                style="@style/NavigationView.Item.Button"
+                android:background="@drawable/btn_transparent_light">
+
+                <ImageView
+                    android:id="@+id/img_rate_us"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_rate_review" />
+
+                <TextView
+                    android:id="@+id/txt_rate_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/rateus"
+                    android:textColor="@color/nv_text_theme1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_about_us"
+                style="@style/NavigationView.Item.Button"
+                android:background="@drawable/btn_transparent_light">
+
+                <ImageView
+                    android:id="@+id/img_about_us"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_info" />
+
+                <TextView
+                    android:id="@+id/txt_about_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/aboutus"
+                    android:textColor="@color/nv_text_theme1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/btn_share"
+                style="@style/NavigationView.Item.Button"
+                android:background="@drawable/btn_transparent_light">
+
+                <ImageView
+                    android:id="@+id/img_share"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_share" />
+
+                <TextView
+                    android:id="@+id/txt_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/shareapp"
+                    android:textColor="@color/nv_text_theme1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/btn_privacy_policy"
+                style="@style/NavigationView.Item.Button"
+                android:background="@drawable/btn_transparent_light">
+
+                <ImageView
+                    android:id="@+id/img_privacy_policy"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_privacy" />
+
+                <TextView
+                    android:id="@+id/txt_privacy_policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/privacypolicy"
+                    android:textColor="@color/nv_text_theme1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_more_app"
+                style="@style/NavigationView.Item.Button"
+                android:background="@drawable/btn_transparent_light">
+
+                <ImageView
+                    android:id="@+id/img_more_app"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_more" />
+
+                <TextView
+                    android:id="@+id/txt_more_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/moreapps"
+                    android:textColor="@color/nv_text_theme1" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

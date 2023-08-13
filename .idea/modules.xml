@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/QScanner.iml" filepath="$PROJECT_DIR$/QScanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/QScanner.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/QScanner.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/QScanner.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/QScanner.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/QScanner.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/QScanner.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/QScanner.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/QScanner.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>

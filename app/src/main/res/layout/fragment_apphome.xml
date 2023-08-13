@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:id="@+id/mainGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="500000"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:padding="16dp"
+        android:rowCount="3">
+
+        <!-- Row 1 -->
+
+        <!-- Column 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:id="@+id/home1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/ic_qrcode" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="4dp"
+                    android:text="QR Camera"
+                    android:textAlignment="center"
+                    android:textColor="@color/browser_actions_bg_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Column 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:id="@+id/home2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/ic_qrfile" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="4dp"
+                    android:text="QR from File"
+                    android:textAlignment="center"
+                    android:textColor="@color/browser_actions_bg_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Row 2 -->
+
+        <!-- Column 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:id="@+id/home3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/ic_barcode" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="4dp"
+                    android:text="BarCode Camera"
+                    android:textAlignment="center"
+                    android:textColor="@color/browser_actions_bg_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Column 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:id="@+id/home4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/ic_qrgenerate" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="4dp"
+                    android:text="Generate QR"
+                    android:textAlignment="center"
+                    android:textColor="@color/browser_actions_bg_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 2 -->
+
+        <!-- Column 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:id="@+id/home5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/ic_codelist" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="4dp"
+                    android:text="Code List"
+                    android:textAlignment="center"
+                    android:textColor="@color/browser_actions_bg_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Column 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:id="@+id/home6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/ic_setting" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="4dp"
+                    android:text="Settings"
+                    android:textAlignment="center"
+                    android:textColor="@color/browser_actions_bg_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+</LinearLayout>
